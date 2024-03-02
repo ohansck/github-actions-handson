@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    restart: always
+    ports:
+      - 80:3000
+    environment:
+      - DB_HOST=
+      - DB_USERNAME=
+      - DB_PASSWORD=
+      - DB_DATABASE=
+      - DB_PORT=
+    stdin_open: true
+    tty: true
